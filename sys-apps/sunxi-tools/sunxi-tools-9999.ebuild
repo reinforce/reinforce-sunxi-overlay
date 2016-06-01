@@ -16,7 +16,7 @@ RDEPEND="virtual/libusb"
 DEPEND="${RDEPEND}"
 
 src_install() {
-	dobin bootinfo fel fexc nand-part pio || die
-	dosym fexc /usr/bin/fex2bin || die
-	dosym fexc /usr/bin/bin2fex || die
+	dobin sunxi-bootinfo sunxi-fel sunxi-fexc sunxi-nand-part sunxi-pio || die
+	dosym sunxi-fexc /usr/bin/fex2bin || die
+	dosym sunxi-fexc /usr/bin/bin2fex || die
 }
